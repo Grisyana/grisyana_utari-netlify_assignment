@@ -1,0 +1,42 @@
+h2 {
+    font-size: 20;
+}
+
+h3 {color:rgba(255, 255, 255, 0.801)}
+
+img {border-radius: 50%;}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 8px;
+    background-color: rgb(175, 68, 68);
+    padding: 10px;
+}
+
+.item {
+    background-color: rgba(19, 6, 6, 0.61);
+    border: 1px solid rgba(250, 247, 247, 0.8);
+    padding: 50px;
+    font-size: 24px;
+    text-align: left;
+}
+
+ .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ff37a5a2;
+ }
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For desktop: */
+@media only screen and (min-width){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+}
